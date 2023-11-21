@@ -26,4 +26,4 @@ for i in range(number_of_transactions):
 
     signed_txn = w3.eth.account.sign_transaction(transaction, private_key)
     txn_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
-    print(f'交易已发送，哈希值为: {txn_hash.hex()}')
+    print(f'交易已发送，TX: {txn_hash.hex()}')
